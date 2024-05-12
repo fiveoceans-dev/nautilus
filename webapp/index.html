@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.png" type="image/png">
+
+    <title>Nautilus Project</title>
+    
+</head>
+<body style="background-image: url('https://64.media.tumblr.com/f86b0f2fae3244ec72440637707bfa47/ea6952d55f7fc5b4-98/s250x400/be5bcd42906abf98bb25f545a182b3ef54927f41.gifv');">
+
+
+    <div class="container">
+        <div class="menu">
+            <div class="soundcloud-menu">
+                <iframe class="soundcloud" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/archillect/sets/engine"></iframe>
+            </div>
+        </div>
+        <div class="content">
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    var gifList = [
+        "https://64.media.tumblr.com/f86b0f2fae3244ec72440637707bfa47/ea6952d55f7fc5b4-98/s250x400/be5bcd42906abf98bb25f545a182b3ef54927f41.gifv",
+        "https://64.media.tumblr.com/4949662b4a18ee090138d6652e70f2a3/306e2c24b8e047d4-30/s540x810/e850623d8d346b5c3a807b506fc703b5cc5b96c7.gifv",
+        "https://64.media.tumblr.com/485fb763613b1685e16ac70f8f88d795/f363e2f36ecaa429-6c/s400x600/fe4ef8837d31aaa556ac7da89be9e5769ed3fae8.gifv",
+        "https://64.media.tumblr.com/f6bc87faf880c01955fe338a08d497f9/561e45aeb01d83e8-4d/s250x400/d042f831bd406c5f167deb091b909bd7c35aabda.gifv",
+        "https://64.media.tumblr.com/302e79baefaa67586d7ca3881944edaa/561e45aeb01d83e8-07/s250x400/73a776cb7bbc87f97370ae54684d183606c41be6.gifv",
+        "https://64.media.tumblr.com/e0ebc0edcf2a96990b5e01d03ccd7a99/f33a7c35b016b736-a8/s400x600/4b003c8b100e8349efbfcc44525bf9ba60f0d179.gifv",
+        "https://64.media.tumblr.com/4ac57db98021ffd3a4e6717dee097802/aa44282323a3c36a-66/s400x600/eb67aae0b31c0cb3d6abf41bc12094ac2455a6ae.gifv",
+        "https://64.media.tumblr.com/222d8ebd6eb1eceeceb90c62fc7ede4f/d36aff4052aa986f-bc/s400x600/3c0ef18bf40c5f4acedb9d6e97eafa9d2d8079db.gifv",
+        "https://64.media.tumblr.com/f1dd27e830b46085afd1ce88b1f47a72/c7673ab4b14550dd-e0/s400x600/523d7ff53fa09194c2db32cc061de397f9640132.gifv",
+        "https://64.media.tumblr.com/3f8f5632b1dcd63f95a0e252c7d76774/tumblr_pejvi8ZjpB1tlkklno1_400.gifv",
+        "https://64.media.tumblr.com/77029eee16c12d1a6dc792d4ed35f6ba/tumblr_pc2p7jUBqv1xphacxo3_400.gifv",
+        "https://64.media.tumblr.com/ef2e2596c4ea072a60453d23ceab337f/tumblr_oy4wj5VkkZ1slwfdjo1_400.gifv",
+        "https://64.media.tumblr.com/a398e0c1d5ff7b084f7bd077339c200a/tumblr_p3momlxycq1t2eu2qo1_400.gifv"
+        // Add more GIF URLs here
+    ];
+
+    var currentIndex = 0;
+
+    function changeGif() {
+        document.body.style.backgroundImage = "url('" + gifList[currentIndex] + "')";
+        currentIndex = (currentIndex + 1) % gifList.length;
+        setTimeout(changeGif, 3000); // Change every 3 seconds
+    }
+
+    changeGif(); // Start the slideshow
+</script>
+</html>

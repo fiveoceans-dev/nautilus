@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeInOut 3s linear infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 1;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    display: block;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu {
+    width: 300px;
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.soundcloud-menu {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+}
